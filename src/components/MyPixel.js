@@ -1,3 +1,9 @@
 import React from 'react';
 
-const MyPixel = (props)=>(<span ></span>)
+const MyPixel = ({mySize})=>{
+
+
+return(<span children={mySize*2}></span>);
+}
+
+export default MyPixel;
