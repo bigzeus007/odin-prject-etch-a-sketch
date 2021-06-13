@@ -5,33 +5,25 @@
 
 .monTab {
 
-    display: flex;
+    display: inline-flex ;
     flex-wrap: wrap;
     position: relative;
     
-    justify-content: center;
+    
+    left: 15% ;
+    top: 100px;
    
 
-    top : 200px;
-    left: 200px;
     
-    background-color: red;
-    width: 500px;
-    height: 500px;
+    
+    
+    
 
 }
 button:hover{
-    background-color: cornsilk;
+    background-color: rgb(55, 58, 236);
 }
-button{
-   
-    
-   
-    
-    background-color: burlywood;
-    
 
-}
 
 
 .App-header {
