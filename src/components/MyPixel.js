@@ -18,7 +18,7 @@ return(
 
 
     myArray.map((element)=>
-    <button className='myCell' key={element.toString()} className={"monTableau"} style={{ width:500/mySize, height:500/mySize}}></button>)
+    <button className='myCell' key={element.toString()} className={"monTableau"} style={{height:500/mySize,width:500/mySize}}/>)
 
 )
 }

@@ -5,18 +5,11 @@
 
 .monTab {
 
-    display: inline-flex ;
+    display: flex ;
     flex-wrap: wrap;
     position: relative;
     
-    
-    left: 15% ;
-    top: 100px;
-   
-
-    
-    
-    
+    justify-content: center;
     
 
 }
@@ -24,9 +17,13 @@ button:hover{
     background-color: rgb(55, 58, 236);
 }
 
-
+button{
+    border: 0px;
+    padding: 0;
+}
 
 .App-header {
+    position: relative;
     
 
 }
