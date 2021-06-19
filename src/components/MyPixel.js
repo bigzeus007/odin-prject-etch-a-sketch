@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function MyPixel({mySize}){
+function MyPixel({mySize,myOtherColor}){
 
     
     const myChoosenColor=[]
@@ -19,11 +19,12 @@ function MyPixel({mySize}){
             myColor: myChoosenColor[index]
         };
     }
-
+    
+    myOtherColor=(255,255,255)
     function fixMyColor(element) {
         let myElement=document.getElementById(element.index)
-        console.log(myElement)
-        myElement.setAttribute("class","red")
+        
+        myElement.setAttribute("class",myOtherColor)
         
         
         
