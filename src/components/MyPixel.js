@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
+
 
 function MyPixel({mySize,myOtherColor}){
 
-    
+    const [isWrite,setIsWriting]=useState(false)
     const myChoosenColor=[]
     myChoosenColor.length=Math.pow(mySize,2)
-    myChoosenColor.fill("green")
+    myChoosenColor.fill("")
 
     const myArray=[]
 
@@ -20,21 +21,17 @@ function MyPixel({mySize,myOtherColor}){
         };
     }
     
-    myOtherColor=(255,255,255)
+    
     function fixMyColor(element) {
         let myElement=document.getElementById(element.index)
-        
-        myElement.setAttribute("class",myOtherColor)
-        
-        
+        myElement.style.backgroundColor=myOtherColor
         
     }
+   //myElement.setAttribute("class",myOtherColor)
    
-    //document.getElementById("{element.toString()}").backgroundColor='yellow';
-
 return(
     myArray.map((element)=>
-    <button onMouseOver={()=>{fixMyColor(element)}} className={element.myColor} id={element.index} key={element.index} style={{height:500/mySize,width:500/mySize}}/>
+    <button onClick={()=>{setIsWriting(!isWrite)}} onMouseOver={()=>{isWrite? fixMyColor(element):clearTimeout()}} className={element.myColor} id={element.index} key={element.index} style={{height:500/mySize,width:500/mySize}}/>
     )
 )
 }
