@@ -20,7 +20,7 @@ function MyPixel({mySize,myOtherColor}){
             myColor: myChoosenColor[index]
         };
     }
-    
+  
     
     function fixMyColor(element) {
         let myElement=document.getElementById(element.index)
@@ -31,7 +31,7 @@ function MyPixel({mySize,myOtherColor}){
    
 return(
     myArray.map((element)=>
-    <button onClick={()=>{setIsWriting(!isWrite)}} onMouseOver={()=>{isWrite? fixMyColor(element):clearTimeout()}} className={element.myColor} id={element.index} key={element.index} style={{height:500/mySize,width:500/mySize}}/>
+    <button onClick={()=>{setIsWriting(!isWrite);if (!isWrite) {document.getElementById(element.index).style.backgroundColor=myOtherColor}}} onMouseOver={()=>{if(isWrite){ fixMyColor(element)}}} className={element.myColor} id={element.index} key={element.index} style={{height:500/mySize,width:500/mySize}}/>
     )
 )
 }

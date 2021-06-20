@@ -1,4 +1,11 @@
 .App {
+    position: absolute;
+    border: teal solid;
+    padding-bottom: 6px;
+    
+}
+input{
+    position: relative;
     
     
 }
@@ -13,13 +20,10 @@
     
 
 }
-button:hover{
-    
-}
 
 button{
     border: 0px;
-    padding: 0;
+    padding: 0px;
 }
 
 .App-header {
