@@ -1,15 +1,37 @@
+
 .App {
     position: absolute;
     border: teal solid;
     padding-bottom: 6px;
     
 }
+label{
+    text-align: center;
+}
+#root{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    
+}
 input{
     position: relative;
     
     
+    
 }
-
+input{
+    text-align: center;
+    font-size: 25px;
+}
+.SetSize{
+    border: black solid ;
+    font-size: x-large;
+   
+}
+body{
+background-image: url(/src/images/monArrPlan.jpg);
+}
 .monTab {
 
     display: flex ;
