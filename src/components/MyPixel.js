@@ -30,9 +30,12 @@ function MyPixel({mySize,myOtherColor}){
    //myElement.setAttribute("class",myOtherColor)
    
 return(
+    
+    
     myArray.map((element)=>
     <button onClick={()=>{setIsWriting(!isWrite);if (!isWrite) {document.getElementById(element.index).style.backgroundColor=myOtherColor}}} onMouseOver={()=>{if(isWrite){ fixMyColor(element)}}} className={element.myColor} id={element.index} key={element.index} style={{height:500/mySize,width:500/mySize}}/>
     )
+    
 )
 }
 
