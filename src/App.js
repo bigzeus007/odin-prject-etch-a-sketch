@@ -6,22 +6,13 @@ import MyPixel from './components/MyPixel';
 
 
 function App() {
- 
   const [mySize,setSize] = useState(4);
   const [myOtherColor,setMyOtherColor]=useState("#ff0000")
-
   const myClear=()=>{
     for (let index = 0; index < (mySize*mySize); index++) {
       document.getElementById(index).style.backgroundColor=""
-      
     }
-
-    
   }
-
-  
-
-
   return (
     <div className="App">
       <header className="App-header" >
